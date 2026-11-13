@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: monsoons-farmyard-phone
+    runtime: static
+    buildCommand: echo "Farmyard static build ready"
+    staticPublishPath: ./public
+    autoDeployTrigger: commit

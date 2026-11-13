@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#244b37">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Farmyard">
+  <meta name="description" content="Monsoons Farmyard: harvest, stack, sell and grow in a standalone farming game.">
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <link rel="apple-touch-icon" href="./icons/icon-192.png">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="stylesheet" href="./studio.css">
+  <link rel="stylesheet" href="./camera.css">
+  <link rel="stylesheet" href="./farm-desk.css">
+  <link rel="stylesheet" href="./standalone.css">
+  <title>Monsoons Farmyard | Play</title>
+</head>
+<body class="farmyard-standalone">
+  <main id="world-play" hidden aria-label="The farm game"></main>
+  <section id="title-screen" class="title-screen" aria-label="Monsoons Farmyard start screen">
+    <div class="title-sun" aria-hidden="true"></div><div class="title-hill back" aria-hidden="true"></div><div class="title-hill front" aria-hidden="true"></div>
+    <div class="title-panel">
+      <div class="title-lockup"><img src="./icons/icon-192.png" alt=""><div><span>MONSOONS</span><h1>FARMYARD</h1></div></div>
+      <p class="title-subtitle">A little farm. A world of possibilities.</p>
+      <p class="title-description">Harvest hay, feed the animals, deliver customer orders and watch your farm grow. It's your little business now.</p>
+      <div class="title-buttons"><button id="continue-game" class="action-main">Start farming <span>▶</span></button><button id="new-game" class="action-soft">New farm</button></div>
+      <div class="title-links"><button id="how-to-play">How to play</button><button id="send-feedback">Send test feedback</button></div>
+      <p class="title-save" id="save-summary" role="status">Your farm autosaves on this phone.</p>
+      <small class="title-meta">EARLY PLAYTEST · M009 · PHONE EDITION</small>
+    </div>
+    <div class="title-corner" aria-hidden="true"><span>🐔</span><span>🌾</span><span>🐄</span></div>
+  </section>
+  <div id="portrait-hint" class="portrait-hint" role="status" hidden>↻ Turn your phone sideways for the widest farm view. <button id="dismiss-portrait" aria-label="Dismiss rotation tip">×</button></div>
+  <dialog id="shell-dialog" class="shell-dialog" aria-labelledby="shell-dialog-title">
+    <div class="shell-dialog-head"><h2 id="shell-dialog-title">Your farm</h2><button type="button" id="close-dialog" aria-label="Close">×</button></div>
+    <div id="shell-dialog-content"></div>
+  </dialog>
+  <noscript><p>This game needs JavaScript enabled in your browser.</p></noscript>
+  <script type="module" src="./standalone.js"></script>
+</body>
+</html>
